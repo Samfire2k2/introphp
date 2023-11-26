@@ -12,4 +12,34 @@ function showArray($array) {
     print_r($array);
     echo "</pre>";
 }
+
+
+function view($viewPath, $data = array(), $varGlobale = false) {
+    extract($data);
+
+    if ($varGlobale) {
+        global $modules;
+    }
+
+
+    include $viewPath;
+}
+
+//Méthode 1 - utilisation fonction vue avec variables globales
+//$modules = getModules();
+//view('views/index.view.php', array(), true);
+
+//Méthode 2 - utilisation fonction vue avec données passées en paramètres
+$autreDonnee = array('title' => 'Ma page', 'content' => 'Contenu de $autreDonnee.');
+view('views/other.view.php', $autreDonnee);
+
+/*La première méthode 1 est moins flexible puisqu'elle ne permet
+de passer que des variables globales et sont exposées à la vue, ce qui est
+moins sécurisant.
+
+La deuxième méthode quant à elle permet de passer les données de n'importe
+quel type en paramètres à la vue et est plus sécurisée, dans le sens
+où elle évite d'exposer les variables globales à la vue.*/
+
+
 ?>

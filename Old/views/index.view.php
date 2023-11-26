@@ -1,7 +1,6 @@
 <?php
-include '../functions.php';
+$param_vue = array('titre' => 'Titre de la page');
 
-$modules = getModules();
-
-showArray($modules);
+// Utilisation de la fonction view en passant les données en tant que paramètres
+view('views/layout.views.php', $param_vue);
 ?>
