@@ -16,5 +16,6 @@
     <p>Nombre d'heures de CM : <?= $cm ?></p>
     <p>Nombre d'heures de TD : <?= $td ?></p>
     <p>Nombre d'heures de TP : <?= $tp ?></p>
+    <?php } ?>
 </body>
 </html>
