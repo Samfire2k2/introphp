@@ -27,7 +27,7 @@ function view($viewPath, $data = array(), $varGlobale = false) {
 
 //Méthode 1 - utilisation fonction vue avec variables globales
 $modules = getModules();
-view('views/index.view.php', array(), true);
+view('views2/index.view.php', array(), true);
 
 //Méthode 2 - utilisation fonction vue avec données passées en paramètres
 //$autreDonnee = array('title' => 'Ma page', 'content' => 'Contenu de $autreDonnee.');

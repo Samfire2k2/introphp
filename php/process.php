@@ -1,6 +1,6 @@
 <?php
 
-include 'inc/functions.php';
+include 'inc2/functions.php';
 
 // Traiter les données du formulaire
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tp = $_POST['tp'];
 
     // Charger la vue show avec les données du module
-    view('views/show.view.php', compact('code', 'nom', 'responsable', 'email_responsable', 'cm', 'td', 'tp'));
+    view('views2/show.view.php', compact('code', 'nom', 'responsable', 'email_responsable', 'cm', 'td', 'tp'));
 }
 
 ?>
