@@ -5,7 +5,7 @@
     <title>Créer module</title>
 </head>
 <body>
-    <h1>Formulaire de création d'un Module</h1>
+    <h1>Formulaire de création d'un module</h1>
     
     <form action="process.php" method="post">
         <label for="code">Code :</label>

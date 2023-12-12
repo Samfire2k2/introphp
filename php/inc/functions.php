@@ -31,7 +31,7 @@ view('views/index.view.php', array(), true);
 
 //Méthode 2 - utilisation fonction vue avec données passées en paramètres
 //$autreDonnee = array('title' => 'Ma page', 'content' => 'Contenu de $autreDonnee.');
-//view('views/other.view.php', $autreDonnee);
+//view('views/index.view.php', $autreDonnee);
 
 /*La première méthode 1 est moins flexible puisqu'elle ne permet
 de passer que des variables globales et sont exposées à la vue, ce qui est
