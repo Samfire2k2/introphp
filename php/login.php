@@ -24,11 +24,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['login_time'] = time();
 
     // Rediriger vers une page sécurisée ou afficher un message d'accueil
-    header('Location: dashboard.php'); // Remplacez dashboard.php par la page de destination
+    header('Location: bienvenue.php'); // Remplacez dashboard.php par la page de destination
     exit();
 }
 
 // Afficher la vue de connexion
-include 'login.view.php';
+include 'views3/login.view.php';
 
 ?>
