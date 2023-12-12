@@ -8,8 +8,6 @@
 <body>
     <h1>Informations du module</h1>
 
-<!-- Affiche les informations sous forme de tableau avec un thead -->
-
 <table class="table">
 <thead>
     <tr>
