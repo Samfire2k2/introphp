@@ -1,8 +1,8 @@
 <?php
 
-include 'inc2/functions.php';
+include 'inc3/functions.php';
 
 // Charger la vue create pour afficher le formulaire
-view('views2/create.view.php');
+view('views3/create.view.php');
 
 ?>
