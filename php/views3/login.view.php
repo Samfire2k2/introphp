@@ -12,8 +12,8 @@
     <h2>Formulaire d'authentification</h2>
 
     <form class="form" action="login.php" method="post">
-        <label for="username">Email :</label><br>
-        <input type="email" id="username" name="username" required>
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required>
         <br>
         <label for="password">Mot de passe :</label><br>
         <input type="password" id="password" name="password" required>
