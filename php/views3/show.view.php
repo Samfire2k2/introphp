@@ -3,17 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Infos du module</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <h1>Informations du module</h1>
 
-    <p>Code : <?= $code ?></p>
-    <p>Nom : <?= $nom ?></p>
-    <p>Responsable : <?= $responsable ?></p>
-    <p>Email du Responsable : <?= $email_responsable ?></p>
-    <p>Nombre d'heures de CM : <?= $cm ?></p>
-    <p>Nombre d'heures de TD : <?= $td ?></p>
-    <p>Nombre d'heures de TP : <?= $tp ?></p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Affiche les informations sous forme de tableau avec un thead -->
+
+<table class="table">
+<thead>
+    <tr>
+        <th>Code</th>
+        <th>Nom</th>
+        <th>Responsable</th>
+        <th>Email du Responsable</th>
+        <th>Nombre d'heures de CM</th>
+        <th>Nombre d'heures de TD</th>
+        <th>Nombre d'heures de TP</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><?= $code ?></td>
+        <td><?= $nom ?></td>
+        <td><?= $responsable ?></td>
+        <td><?= $email_responsable ?></td>
+        <td><?= $cm ?></td>
+        <td><?= $td ?></td>
+        <td><?= $tp ?></td>
+    </tr>
+</tbody>
+</table>
 </body>
 </html>
