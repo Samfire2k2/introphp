@@ -7,7 +7,7 @@
 <body>
     <h1>Formulaire de création d'un module</h1>
     
-    <form action="process.php" method="post">
+    <form action="process3.php" method="post">
         <label for="code">Code :</label>
         <input type="text" name="code" required><br>
 
