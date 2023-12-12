@@ -8,12 +8,31 @@
 <body>
     <h1>Informations du module</h1>
 
-    <p>Code : <?= $code ?></p>
-    <p>Nom : <?= $nom ?></p>
-    <p>Responsable : <?= $responsable ?></p>
-    <p>Email du Responsable : <?= $email_responsable ?></p>
-    <p>Nombre d'heures de CM : <?= $cm ?></p>
-    <p>Nombre d'heures de TD : <?= $td ?></p>
-    <p>Nombre d'heures de TP : <?= $tp ?></p>
+<!-- Affiche les informations sous forme de tableau avec un thead -->
+
+<table class="table">
+<thead>
+    <tr>
+        <th>Code</th>
+        <th>Nom</th>
+        <th>Responsable</th>
+        <th>Email du Responsable</th>
+        <th>Nombre d'heures de CM</th>
+        <th>Nombre d'heures de TD</th>
+        <th>Nombre d'heures de TP</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><?= $code ?></td>
+        <td><?= $nom ?></td>
+        <td><?= $responsable ?></td>
+        <td><?= $email_responsable ?></td>
+        <td><?= $cm ?></td>
+        <td><?= $td ?></td>
+        <td><?= $tp ?></td>
+    </tr>
+</tbody>
+</table>
 </body>
 </html>
