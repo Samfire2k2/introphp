@@ -42,8 +42,10 @@ quel type en paramètres à la vue et est plus sécurisée, dans le sens
 où elle évite d'exposer les variables globales à la vue.*/
 
 //Définir et utiliser une fonction sanitize (basée sur la fonction php filter_input) pour nettoyer une valeur saisie dans un formulaire.
-function sanitize($type, $name) {
+/*function sanitize($type, $name) {
     return filter_input($type, $name, FILTER_SANITIZE_STRING);
+}*/
+function sanitize($name, $type = FILTER_SANITIZE_STRING) {
+    return filter_input(INPUT_POST, $name, $type);
 }
-
 ?>

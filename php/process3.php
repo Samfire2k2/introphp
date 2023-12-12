@@ -4,13 +4,13 @@ include 'inc3/functions.php';
 
 // Traiter les données du formulaire
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $code = $_POST['code'];
-    $nom = $_POST['nom'];
-    $responsable = $_POST['responsable'];
-    $email_responsable = $_POST['email_responsable'];
-    $cm = $_POST['cm'];
-    $td = $_POST['td'];
-    $tp = $_POST['tp'];
+    $code = sanitize('code');
+    $nom = sanitize('nom');
+    $responsable = sanitize('responsable');
+    $email_responsable = sanitize('email_responsable', FILTER_SANITIZE_EMAIL);
+    $cm = sanitize('cm');
+    $td = sanitize('td');
+    $tp = sanitize('tp');
 
     // Charger la vue show avec les données du module
     view('views3/show.view.php', compact('code', 'nom', 'responsable', 'email_responsable', 'cm', 'td', 'tp'));
