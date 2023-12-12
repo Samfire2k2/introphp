@@ -1,6 +1,6 @@
 <?php
 
-include 'functions.php';
+include 'inc/functions.php';
 
 // Traiter les données du formulaire
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
