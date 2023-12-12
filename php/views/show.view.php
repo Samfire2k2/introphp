@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Informations du module</h1>
-    
+
     <p>Code : <?= $code ?></p>
     <p>Nom : <?= $nom ?></p>
     <p>Responsable : <?= $responsable ?></p>

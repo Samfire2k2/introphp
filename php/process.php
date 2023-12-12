@@ -3,7 +3,7 @@
 include 'inc/functions.php';
 
 // Traiter les données du formulaire
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $code = $_POST['code'];
     $nom = $_POST['nom'];
     $responsable = $_POST['responsable'];
