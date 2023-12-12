@@ -1,6 +1,6 @@
 <?php
 
-include 'inc2/functions.php';
+include 'inc3/functions.php';
 
 // Traiter les données du formulaire
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
