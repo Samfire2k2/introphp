@@ -1,7 +1,7 @@
 <?php
 function getModules() {
 
-    $jsonFilePath = 'data/modules.json';
+    $jsonFilePath = MODULES_JSON_PATH;
 
     if (file_exists($jsonFilePath)) {
         $jsonContent = file_get_contents($jsonFilePath);

@@ -1,7 +1,3 @@
 <?php
-
-$config = array(
-    'email' => 'test@test.com',
-    'password' => 'test');
-
+    define('MODULES_JSON_PATH', 'data/modules.json');
 ?>
