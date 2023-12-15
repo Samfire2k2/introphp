@@ -1,4 +1,6 @@
 <?php
+include "inc4/config.php";
+
 function getModules() {
 
     $jsonFilePath = MODULES_JSON_PATH;
@@ -39,7 +41,7 @@ function view($viewPath, $data = array(), $varGlobale = false) {
 
 //Méthode 1 - utilisation fonction vue avec variables globales
 $modules = getModules();
-view('views3/index.view.php', array(), true);
+view('views4/index.view.php', array(), true);
 
 function sanitize($name, $type = FILTER_SANITIZE_STRING) {
     return filter_input(INPUT_POST, $name, $type);
