@@ -1,7 +1,7 @@
 <?php
 
 $config = array(
-    'email' => 'utilisateur@example.com',
-    'password' => 'motdepasse123');
+    'email' => 'test@test.com',
+    'password' => 'test');
 
 ?>

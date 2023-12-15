@@ -1,8 +1,6 @@
 <?php
-
 session_start();
 
-// Vérifie si l'utilisateur est déjà connecté
 if (isset($_SESSION['user'])) {
     header('Location: bienvenue.php');
     exit();
@@ -13,13 +11,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error = "Format d'email invalide. Veuillez saisir une adresse email valide.";
+        $error = "Format d'email invalide.";
     } else {
         include 'inc3/config.php';
 
         if ($email === $config['email'] && $password === $config['password']) {
             $_SESSION['user'] = $email;
-
             $_SESSION['login_time'] = time();
 
             header('Location: bienvenue.php');
@@ -31,5 +28,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 include 'views3/login.view.php';
-
 ?>

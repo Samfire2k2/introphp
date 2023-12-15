@@ -9,16 +9,20 @@
 </head>
 <body>
 
-    <h2>Formulaire d'authentification</h2>
+    <h5><u>Formulaire d'authentification</u></h5>
 
     <form class="form" action="login.php" method="post">
-        <label for="email">Email :</label><br>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="password">Mot de passe :</label><br>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email :</label><br>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <br>
+        </div>
+        <div class="mb-3">    
+            <label for="password" class="form-label">Mot de passe :</label><br>
+            <input type="password" class="form-control" id="password" name="password" required>
+            <br>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
     </form>
 
 </body>
