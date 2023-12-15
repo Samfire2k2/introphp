@@ -1,0 +1,30 @@
+[
+    {
+      "code": "XLG5IE030",
+      "nom": "Comptabilité financière",
+      "responsable": "C. Suaudeau",
+      "email": "christophe.suaudeau@univ-nantes.fr",
+      "CM": "0h",
+      "TD": "44h",
+      "TP": "0h"
+    },
+    {
+      "code" : "XLG5IE020",
+      "nom" : "Ingénierie des exigences",
+      "responsable" : "G. Jean",
+      "email": "geraldine.jean@univ-nantes.fr",
+      "CM" : "13h20",
+      "TD" : "22h40",
+      "TP" : "8h"
+    },
+    {
+      "code" : "XLG5IE060",
+      "nom" : "BD et Web",
+      "responsable" : "L. Monceaux",
+      "email" : "laura.monceaux@univ-nantes.fr",
+      "CM" : "0h",
+      "TD" : "24h",
+      "TP" : "16h"
+    }
+  ]
+  

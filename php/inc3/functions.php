@@ -29,22 +29,6 @@ function view($viewPath, $data = array(), $varGlobale = false) {
 $modules = getModules();
 view('views3/index.view.php', array(), true);
 
-//Méthode 2 - utilisation fonction vue avec données passées en paramètres
-//$autreDonnee = array('title' => 'Ma page', 'content' => 'Contenu de $autreDonnee.');
-//view('views/index.view.php', $autreDonnee);
-
-/*La première méthode 1 est moins flexible puisqu'elle ne permet
-de passer que des variables globales et sont exposées à la vue, ce qui est
-moins sécurisant.
-
-La deuxième méthode quant à elle permet de passer les données de n'importe
-quel type en paramètres à la vue et est plus sécurisée, dans le sens
-où elle évite d'exposer les variables globales à la vue.*/
-
-//Définir et utiliser une fonction sanitize (basée sur la fonction php filter_input) pour nettoyer une valeur saisie dans un formulaire.
-/*function sanitize($type, $name) {
-    return filter_input($type, $name, FILTER_SANITIZE_STRING);
-}*/
 function sanitize($name, $type = FILTER_SANITIZE_STRING) {
     return filter_input(INPUT_POST, $name, $type);
 }
