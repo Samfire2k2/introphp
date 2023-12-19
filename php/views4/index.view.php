@@ -10,4 +10,5 @@ $param_vue = array(
 );
 
 view('views4/layout.views.php', $param_vue);
+
 ?>
