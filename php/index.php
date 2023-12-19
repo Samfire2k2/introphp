@@ -29,9 +29,7 @@
                           Série 2
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="tp2.1.php">Exercice 1</a></li>
-                          <li><a class="dropdown-item" href="tp2.2.php">Exercice 2</a></li>
-                          <li><a class="dropdown-item" href="tp2.3.php">Exercice 3</a></li>
+                          <li><a class="dropdown-item" href="index2.php">Exercice 1</a></li>
                         </ul>
                       </li>
                       <li class="nav-item dropdown">
@@ -39,11 +37,9 @@
                           Série 3
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="tp3.1.php">Exercice 1</a></li>
-                          <li><a class="dropdown-item" href="tp3.2.php">Exercice 2</a></li>
-                          <li><a class="dropdown-item" href="tp3.3.php">Exercice 3</a></li>
-                          <li><a class="dropdown-item" href="tp3.4.php">Exercice 4</a></li>
-                          <li><a class="dropdown-item" href="tp3.5.php">Exercice 5</a></li>
+                          <li><a class="dropdown-item" href="index3.php">Exercice 1</a></li>
+                          <li><a class="dropdown-item" href="login.php">Login</a></li>
+
                         </ul>
                       </li>
                       <li class="nav-item dropdown">
