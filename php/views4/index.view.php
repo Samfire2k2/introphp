@@ -1,6 +1,6 @@
 <?php
 // index.view.php
-$json = file_get_contents('modules.json');
+$json = file_get_contents('data/modules.json');
 $modules = json_decode($json, true);
 
 $param_vue = array(
