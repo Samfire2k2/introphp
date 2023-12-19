@@ -22,6 +22,7 @@
     </tr>
 </thead>
 <tbody>
+<<<<<<< HEAD
 
     <tr>
         <td><?= isset($code) ? $code : '' ?></td>
@@ -31,9 +32,25 @@
         <td><?= isset($cm) ? $cm : '' ?></td>
         <td><?= isset($td) ? $td : '' ?></td>
         <td><?= isset($tp) ? $tp : '' ?></td>
+=======
+    <?php foreach ($modules as $module): ?>
+    <tr>
+        <td><?= $module['code'] ?></td>
+        <td><?= $module['nom'] ?></td>
+        <td><?= $module['responsable'] ?></td>
+        <td><?= $module['email'] ?></td>
+        <td><?= $module['CM'] ?></td>
+        <td><?= $module['TD'] ?></td>
+        <td><?= $module['TP'] ?></td>
+>>>>>>> 642a5f5ff06db37b2559337bdbb481b080826cea
     </tr>
+    <?php endforeach; ?>
 </tbody>
 </table>
 </body>
+<<<<<<< HEAD
 <?php endif; ?>
 </html>
+=======
+</html>
+>>>>>>> 642a5f5ff06db37b2559337bdbb481b080826cea
