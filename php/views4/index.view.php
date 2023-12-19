@@ -1,6 +1,7 @@
 <?php
+//include 'inc4/config.php';
 // index.view.php
-$json = file_get_contents('data/modules.json');
+$json = file_get_contents(MODULES_JSON_PATH);
 $modules = json_decode($json, true);
 
 $param_vue = array(
