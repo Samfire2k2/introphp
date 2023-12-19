@@ -21,15 +21,17 @@
     </tr>
 </thead>
 <tbody>
+    <?php foreach ($modules as $module): ?>
     <tr>
-        <td><?= $code ?></td>
-        <td><?= $nom ?></td>
-        <td><?= $responsable ?></td>
-        <td><?= $email_responsable ?></td>
-        <td><?= $cm ?></td>
-        <td><?= $td ?></td>
-        <td><?= $tp ?></td>
+        <td><?= $module['code'] ?></td>
+        <td><?= $module['nom'] ?></td>
+        <td><?= $module['responsable'] ?></td>
+        <td><?= $module['email'] ?></td>
+        <td><?= $module['CM'] ?></td>
+        <td><?= $module['TD'] ?></td>
+        <td><?= $module['TP'] ?></td>
     </tr>
+    <?php endforeach; ?>
 </tbody>
 </table>
 </body>
