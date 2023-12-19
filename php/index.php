@@ -39,7 +39,6 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="index3.php">Exercice 1</a></li>
                           <li><a class="dropdown-item" href="login.php">Login</a></li>
-
                         </ul>
                       </li>
                       <li class="nav-item dropdown">
@@ -47,7 +46,7 @@
                           Série 4
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="index.php">Exercice 1</a></li>
+                          <li><a class="dropdown-item" href="index4.php">Exercice 1</a></li>
                 </ul>
             </div>
         </div>
