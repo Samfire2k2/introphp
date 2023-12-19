@@ -28,15 +28,10 @@ function showArray($array) {
 }
 
 
-function view($viewPath, $data = array(), $varGlobale = false) {
+function view($viewPath, $data = array()) {
     extract($data);
-
-    if ($varGlobale) {
-        global $modules;
-    }
-
-
     include $viewPath;
+
 }
 
 //Méthode 1 - utilisation fonction vue avec variables globales
