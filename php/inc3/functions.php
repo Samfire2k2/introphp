@@ -29,7 +29,7 @@ function view($viewPath, $data = array(), $varGlobale = false) {
 $modules = getModules();
 view('views3/index.view.php', array(), true);
 
-function sanitize($name, $type = FILTER_SANITIZE_STRING) {
+function sanitize($name, $type = FILTER_SANITIZE_FULL_SPECIAL_CHARS) {
     return filter_input(INPUT_POST, $name, $type);
 }
 ?>
